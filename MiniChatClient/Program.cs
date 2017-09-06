@@ -1,23 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiniChat
+namespace MiniChatClient
 {
     class Program
     {
         private const int PORT = 7070;
         static void Main(string[] args)
         {
-            Server server = new Server(PORT);
+            Client server = new Client(PORT);
             server.Start();
 
             Console.ReadLine();
         }
     }
-    
-    
 }
